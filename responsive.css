@@ -1,0 +1,430 @@
+@media (min-width: 1920px) and (max-width: 2000px) {
+    .subtitle,
+    .contato {
+        text-align: center;
+    }
+    
+    p, span{
+        font-size: 20px;
+    }
+
+    .infosContact a{
+        width: 50%;
+        margin-left: 25%;
+      }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+    .subtitle,
+    .contato {
+        text-align: center;
+    }
+
+    .infosContact a{
+        width: 50%;
+        margin-left: 25%;
+      }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .subtitle,
+    .contato {
+        text-align: center;
+    }
+
+    .infosContact a{
+        width: 50%;
+        margin-left: 25%;
+      }
+
+    a#scrollToTopButton {
+        margin-right: 5px;
+        margin-bottom: 5rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .subtitle,
+    .contato {
+        text-align: center;
+    }
+
+    .quemSomos {
+        margin-top: 20rem;
+        margin-left: -100%;
+        width: 45rem;
+    }
+
+    .imgHome img{
+        display: none;
+    }
+
+    .infosContact a{
+        width: 50%;
+        margin-left: 25%;
+      }
+
+    a#scrollToTopButton {
+        margin-right: 5px;
+        margin-bottom: 5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .subtitle,
+    .contato {
+        text-align: center;
+    }
+
+    .textHome h1{
+        width: 27rem;
+    }
+
+    .quemSomos {
+        margin-top: 7rem;
+        width: 42rem;
+    }
+
+    .imgHome img{
+        display: none;
+    }
+    .contato {
+        margin-bottom: 5rem;
+    }
+
+    .infosContact a{
+        width: 60%;
+        margin-left: 20%;
+      }
+
+    .imgContact img {
+        width: 20rem;
+    }
+
+    .textLocal {
+        display: none;
+    }
+
+    .local {
+        background-color: transparent;
+    }
+
+    .local iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    .footer {
+        height: 62rem;
+    }
+
+    .logoFooter {
+        margin-right: 0%;
+    }
+
+    .infosFooter{
+        display: block;
+    }
+
+    .copyright span {
+        float: none;
+    }
+
+    .social-icons {
+        display: inline-block;
+    }
+
+    .copyright img {
+        float: none;
+        width: 30px;
+        margin: 25px 15px;
+    }
+
+    a#scrollToTopButton {
+        margin-right: 60px;
+        margin-bottom: 5rem;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .subtitle,
+    .contato {
+        text-align: center;
+    }
+
+    .textHome h1{
+        width: 27rem;
+    }
+
+    .quemSomos {
+        margin-top: 7rem;
+        width: 33rem;
+    }
+
+    .imgHome img{
+        display: none;
+    }
+
+    .contato {
+        margin-bottom: 5rem;
+    }
+
+    .infosContact a{
+        width: 40%;
+        margin-left: 30%;
+      }
+
+    .imgContact img {
+        width: 100%;
+    }
+
+    .textLocal {
+        display: none;
+    }
+
+    .local {
+        background-color: transparent;
+    }
+
+    .local iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    .footer {
+        height: 62rem;
+    }
+
+    .logoFooter {
+        margin-right: 0%;
+    }
+
+    .copyright span {
+        float: none;
+    }
+
+    .social-icons {
+        display: inline-block;
+    }
+
+    .copyright img {
+        float: none;
+        width: 30px;
+        margin: 25px 15px;
+    }
+
+    a#scrollToTopButton {
+        margin-right: 5px;
+        margin-bottom: 1.3rem;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 575px) {
+    .subtitle,
+    .contato {
+        text-align: center;
+    }
+
+    .quemSomos {
+        margin-top: 7rem;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .imgHome img{
+        display: none;
+    }
+
+    .contato {
+        margin-bottom: 5rem;
+    }
+
+    .infosContact a{
+        width: 40%;
+        margin-left: 30%;
+      }
+
+    .imgContact img {
+        width: 100%;
+    }
+
+    .textLocal {
+        display: none;
+    }
+
+    .local {
+        background-color: transparent;
+    }
+
+    .local iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    .footer {
+        height: 62rem;
+    }
+
+    .logoFooter {
+        margin-right: 0%;
+    }
+
+    .copyright span {
+        float: none;
+    }
+
+    .social-icons {
+        display: inline-block;
+    }
+
+    .copyright img {
+        float: none;
+        width: 30px;
+        margin: 25px 15px;
+    }
+
+    a#scrollToTopButton {
+        margin-right: 15px;
+        margin-bottom: 1.3rem;
+    }
+
+}
+
+@media (min-width: 391px) and (max-width: 480px) {
+    .subtitle,
+    .contato {
+        text-align: center;
+    }
+
+    .quemSomos {
+        margin-top: 7rem;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .imgHome img{
+        display: none;
+    }
+
+    .contato {
+        margin-bottom: 5rem;
+    }
+
+    .infosContact a{
+        width: 50%;
+        margin-left: 25%;
+      }
+
+    .imgContact img {
+        width: 100%;
+    }
+
+    .textLocal {
+        display: none;
+    }
+
+    .local {
+        background-color: transparent;
+    }
+
+    .local iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    .footer {
+        height: 62rem;
+    }
+
+    .logoFooter {
+        margin-right: 0%;
+    }
+
+    .copyright span {
+        float: none;
+    }
+
+    .social-icons {
+        display: inline-block;
+    }
+
+    .copyright img {
+        float: none;
+        width: 30px;
+        margin: 25px 15px;
+    }
+
+    a#scrollToTopButton {
+        margin-right: 5px;
+        margin-bottom: 1.3rem;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 390px) {
+    .subtitle,
+    .contato {
+        text-align: center;
+    }
+
+    .quemSomos {
+        margin-top: 7rem;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .imgHome img{
+        display: none;
+    }
+
+    .contato {
+        margin-bottom: 5rem;
+    }
+
+    .infosContact a{
+        width: 60%;
+        margin-left: 20%;
+      }
+
+    .imgContact img {
+        width: 100%;
+    }
+
+    .textLocal {
+        display: none;
+    }
+
+    .local {
+        background-color: transparent;
+    }
+
+    .local iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    .footer {
+        height: 62rem;
+    }
+
+    .logoFooter {
+        margin-right: 0%;
+    }
+
+    .copyright img {
+        float: none;
+    }
+
+    a#scrollToTopButton {
+        margin-right: 5px;
+        margin-bottom: 7rem;
+    }
+
+}

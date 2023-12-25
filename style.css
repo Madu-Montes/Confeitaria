@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.colorText {
+  color: #522E38;
+}
+
+.container {
+  margin: 0px 165px;
+  width: 100vw;
+}
+
+.container nav>img {
+  width: 130px;
+}
+
+/*MENU*/
+
+.header {
+  background-image: url(./imgs/backgroundHome.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  height: 180px;
+  width: 100%;
+  display: flex;
+}
+
+.logo {
+  margin-top: 25px;
+  display: inline-block;
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 40px 8px;
+  line-height: 80px;
+}
+
+li a:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+nav #icon {
+  color: #fff;
+  font-size: 35px;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+li a {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 7px 10px;
+}
+
+ul li a::before {
+  content: "";
+  position: absolute;
+  margin-top: 55px;
+  margin-left: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media (max-width: 992px) {
+  nav #icon {
+    display: block;
+    margin-top: 45px;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #FF9EBB;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .container nav ul {
+    width: 100%;
+    height: 100vh;
+    background: rgb(251, 251, 251);
+    background: linear-gradient(0deg, rgba(251, 251, 251, 1) 0%, rgba(255, 158, 187, 1) 46%, rgba(255, 158, 187, 1) 100%);
+    top: 150px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 9999;
+  }
+
+  nav li {
+    display: block;
+    margin: 50px 0;
+    line-height: 50px;
+  }
+
+  nav a {
+    font-size: 20px;
+    position: relative;
+    color: #694539;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+  }
+
+  ul li a:hover {
+    background-color: #fff;
+    transition: transform 5s ease-in-out;
+    border-radius: 20px;
+  }
+
+  nav ul.show {
+    left: 0;
+  }
+
+  .logo.hidden {
+    margin-top: 20px;
+  }
+
+  .logo {
+    margin-top: 200px;
+    transition: 1s;
+  }
+}
+
+/*HOME, QUEM SOMOS, GALERIA E CONTATO*/
+
+.textHome {
+  margin-top: 50px;
+}
+
+.subtitle {
+  font-weight: 600;
+}
+
+.textHome h1 {
+  font-weight: 700;
+}
+
+#chatButton {
+  background-color: #8F2D56;
+  border-radius: 50px;
+  border: 1px solid #8F2D56;
+  width: 220px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 15px;
+}
+
+#chatButton:hover {
+  background-color: #522E38;
+  border: 1px solid #522E38;
+  transition: 0.7s;
+}
+
+#chatButton img {
+  width: 32px;
+}
+
+.imgHome img {
+  width: 80%;
+  margin-top: 8rem;
+  margin-left: 10%;
+}
+
+.quemSomos {
+  padding-top: 15px;
+  margin-top: 19rem;
+  margin-bottom: 5rem;
+}
+
+p,
+span {
+  font-weight: 300;
+}
+
+.galeria {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.imgContact img {
+  max-width: 500px;
+}
+
+.imgContact a {
+  font-size: 10px;
+  color: #6945399a;
+  float: right;
+}
+
+.imgContact a:hover {
+  color: #694539;
+}
+
+.contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.infosContact {
+  display: flex;
+  margin-bottom: 20px;
+  align-content: center;
+}
+
+.infosContact a {
+  background-color: #FF9EBB;
+  border-radius: 50px;
+  border: 1px solid #FF9EBB;
+  width: 40%;
+  color: #522E38;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-left: 25%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 15px;
+}
+
+.infosContact a:hover {
+  background-color: #fff;
+  border: 1px solid #694539;
+  color: #694539;
+  transition: 0.7s;
+}
+
+.infosContact img {
+  width: 32px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.local {
+  background-color: #FF9EBB;
+  height: 430px;
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 5rem;
+}
+
+.imgLocal {
+  width: 70px;
+  height: 62px;
+  margin-bottom: 20px;
+  padding: 0px 15px;
+}
+
+.textLocal {
+  height: 50%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.textLocal a {
+  background-color: #8F2D56;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  width: 200px;
+  height: 45px;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.textLocal a:hover {
+  background-color: #fff;
+  color: #522E38;
+  transition: 0.5s;
+}
+
+.local iframe {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-right: -15px;
+}
+
+/*footer*/
+
+.footer {
+  background-color: #ffc4d6;
+  color: #522E38;
+}
+
+.line {
+  border: 1px solid #000000;
+  width: 100%;
+}
+
+.copyright {
+  height: 100px;
+}
+
+.copyright span {
+  float: left;
+  margin: 10px;
+}
+
+.copyright img {
+  float: right;
+  width: 32px;
+  margin: 10px;
+}
+
+.copyright img:hover {
+  background-color: #FF9EBB;
+  border-radius: 100%;
+}
+
+.logoFooter {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-right: 25%;
+}
+
+a#scrollToTopButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 25px;
+  margin-bottom: 5px;
+  fill: #522E38;
+}
+
+#scrollToTopButton img {
+  width: 50px;
+}
+
+/*EFEITO ANIMÇÃO AO SCROLLAR*/
+.quemSomos,
+.galeria {
+  visibility: hidden;
+}

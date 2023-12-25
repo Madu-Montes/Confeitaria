@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script>
+        $(document).ready(function () {
+            // Função para fechar o menu
+            function fecharMenu() {
+                $('ul').removeClass('show');
+            }
+
+            // Adiciona um clique ao ícone do menu
+            $('#icon').click(function () {
+                $('ul').toggleClass('show');
+            });
+
+            // Adiciona um clique a cada link do menu
+            $('.menu-link').click(fecharMenu);
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<title>Confeitaria</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="colorText container">
+            <nav>
+                <img class="logo hidden" src="./imgs/logo.png" alt="">
+                <ul>
+                    <li><a class="active menu-link" href="#">Home</a></li>
+                    <li><a class="menu-link" href="#quemSomos">Quem Somos</a></li>
+                    <li><a class="menu-link" href="#galeria">Galeria</a></li>
+                    <li><a class="menu-link" href="#contato">Contato</a></li>
+                </ul>
+                <label id="icon">
+                    <i class="bi bi-list"></i>
+                </label>
+            </nav>
+            <!--Botão subir ao topo-->
+            <a id="scrollToTopButton"><img src="./imgs/up.svg" alt="icone de seta para subir">
+            </a>
+
+            <!--Home-->
+            <div class="row">
+                <div class="col-sm-4 col-md-10 col-lg-6 textHome">
+                    <h1>REALIZAMOS <br> ENTREGAS, PEÇA JÁ</h1>
+                    <a name="" id="chatButton" class="btn btn-outline-dark" href="" role="button"><img
+                            src="./imgs/chat.svg" alt="">Orçamento online</a>
+                    <div class="imgHome">
+                        <img src="./imgs/ilustraHome.png" alt="ilustração de confeiteira decorando bolo">
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5">
+                    <!--Quem somos-->
+                    <div id="quemSomos" class="quemSomos">
+                        <h2 class="subtitle">QUEM SOMOS</h2>
+                        <p>A jornada da Luh Mimu's começou em 20 de março de 2019, quando Luana corajosamente deixou seu
+                            emprego formal para seguir seu sonho. No início, ela se dedicava a fazer bolos no pote por
+                            encomenda, mas à medida que seu negócio ganhava vida, ela se aventurou a expandir o
+                            cardápio, adicionando docinhos, salgados, cupcakes e a conveniência do serviço de entrega.
+
+                            Hoje, os bolos por encomenda continuam sendo a estrela principal da Luh Mimu's, oferecendo
+                            uma variedade encantadora de sabores e decorações. O que torna tudo ainda mais especial é a
+                            paixão da Luh, que compartilha conosco: "O amor de mãe me moveu a trabalhar incansavelmente,
+                            sempre buscando entregar produtos deliciosos e de qualidade, feitos com um toque de carinho.
+                            Acreditar profundamente no seu negócio, manter o foco, e estar disposto a adaptar-se quando
+                            necessário são as chaves do sucesso. Não desista, pois o sucesso muitas vezes chega quando
+                            você menos espera. Aqueles que perseveram conseguem, verdadeiramente, viver seu propósito."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Galeria-->
+            <div id="galeria" class="galeria">
+                <h2 class="subtitle">NOSSOS TRABALHOS</h2>
+                <div class="container gallery">
+                    <div class="row">
+                        <!-- Primeira imagem -->
+                        <div class="col-lg-8 col-md-12 mb-4 mb-lg-0">
+                            <img src="./imgs/cheescake.jpg" class="w-100 rounded mb-4" alt="produto Little Sweet"
+                                height="400px" />
+                        </div>
+                        <!-- Segunda imagem -->
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <img src="./imgs/cupcake.jpg" class="w-100 rounded mb-4" alt="produto Little Sweet"
+                                height="400px" />
+                        </div>
+                        <!-- Terceira imagem -->
+                        <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+                            <img src="./imgs/piePiece.jpg" class="w-100 rounded mb-4" alt="produto Little Sweet"
+                                height="190px" />
+                        </div>
+                        <!-- Quarta imagem -->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                            <img src="./imgs/pie.avif" class="w-100 rounded mb-4" alt="produto Little Sweet"
+                                height="190px" />
+                        </div>
+                        <!-- Quinta imagem -->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                            <img src="./imgs/cheescalePiece.jpg" class="w-100 rounded mb-4" alt="produto Little Sweet"
+                                height="190px" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--Fale conosco-->
+            <div id="contato" class="row contato">
+                <div class="col-md-6 col-lg-5 col-xl-5">
+                    <h2 class="subtitle">FALE CONOSCO</h2>
+                    <p>A sua opinião importa! Estamos sempre dispostos a ouvir as suas propostas, nos chame no Whats.</p>
+                    <div class="infosContact">
+                        <a id="teste" name="" class="btn btn-outline-dark" href=""
+                         role="button"><img src="./imgs/whatsapp.svg" alt="">WhatsApp</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-7 col-xl-5 imgContact">
+                    <img src="./imgs/ilustraContact.png" alt="Ilustração de um homem anunciando algo nas redes">
+                    <a href="https://storyset.com/celebration">Event illustrations by Storyset</a>
+                </div>
+            </div>
+
+
+            <div class="local col-md-12">
+                <div class="textLocal col-md-4">
+                    <img class="imgLocal col-md-12" src="./imgs/localization.svg" alt="icone de localização">
+                    <span>Retire no local ou receba em sua casa!</span>
+                    <br>
+                    <a name="" class="btn btn-outline-dark" href=""
+                        role="button">Faça um pedido</a>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5047164021253!2d-46.634200899999996!3d-23.550309900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59abaaae4233%3A0xd9186faf714bc5b1!2zUHJhw6dhIGRhIFPDqSAtIFPDqSwgU8OjbyBQYXVsbyAtIFNQLCAwMTAwMS0wMDA!5e0!3m2!1spt-BR!2sbr!4v1703530978419!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer class="footer text-center">
+            <div class="container p-4">
+                <div class="row my-4">
+                    <div class="logoFooter col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <div class="d-flex align-items-center justify-content-center mb-4 mx-auto">
+                            <img src="./imgs/logo.png" / alt="logo da Little Sweet">
+                        </div>
+                    </div>
+                    <div class="infosFooter col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Contato</h5>
+                        <ul class="list-unstyled">
+                            <p>WhatsApp: (11) 9999-9999</p>
+                            <p>littlesweets.com.br</p>
+                        </ul>
+                    </div>
+
+                    <div class="infosFooter col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">HORÁRIO DE FUNCIONAMENTO</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p><i class="fas fa-map-marker-alt pe-2"></i>seg.: 09:00 – 20:00</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt pe-2"></i>ter.: 09:00 – 20:00</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt pe-2"></i>qua.: 09:00 – 20:00</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt pe-2"></i>qui.: 09:00 – 20:00</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt pe-2"></i>sex.: 09:00 – 20:00</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt pe-2"></i>sáb.: 09:00 – 20:00</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt pe-2"></i>dom.: Fechado</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Copyright -->
+            <div class="container copyright text-center p-3">
+                <span>© Copyright 2022 - Little Sweet Confeitaria</span>
+                <div class="social-icons col-md-12">
+                    <a href=""><img src="./imgs/facebook.svg" alt="facebook">
+                    </a>
+                    <a href=""><img src="./imgs/tiktok.svg" alt="tiktok">
+                    </a>
+                    <a href=""><img src="./imgs/instagram.svg" alt="instagram">
+                    </a>
+                    <a href=""><img src="./imgs/whatsapp.svg" alt="whatsapp">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
