@@ -230,6 +230,11 @@ span {
   text-align: center;
 }
 
+.produtos img:hover{
+  border: 5px solid #8F2D56;
+  transition: 0.3s;
+}
+
 .imgContact img {
   max-width: 500px;
 }
